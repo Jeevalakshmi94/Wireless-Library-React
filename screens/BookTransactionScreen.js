@@ -64,40 +64,7 @@ export default class TransactionScreen extends React.Component {
 
       else if (buttonState === "normal"){
         return(
-          <View style={styles.container}>
-            <View>
-              <Image
-                source={require("../assets/booklogo.jpg")}
-                style={{width:200, height: 200}}/>
-              <Text style={{textAlign: 'center', fontSize: 30}}>Wily</Text>
-            </View>
-            <View style={styles.inputView}>
-            <TextInput 
-              style={styles.inputBox}
-              placeholder="Book Id"
-              value={this.state.scannedBookId}/>
-            <TouchableOpacity 
-              style={styles.scanButton}
-              onPress={()=>{
-                this.getCameraPermissions("BookId")
-              }}>
-              <Text style={styles.buttonText}>Scan</Text>
-            </TouchableOpacity>
-            </View>
-            <View style={styles.inputView}>
-            <TextInput 
-              style={styles.inputBox}
-              placeholder="Student Id"
-              value={this.state.scannedStudentId}/>
-            <TouchableOpacity 
-              style={styles.scanButton}
-              onPress={()=>{
-                this.getCameraPermissions("StudentId")
-              }}>
-              <Text style={styles.buttonText}>Scan</Text>
-            </TouchableOpacity>
-            </View>
-          </View>
+          
         );
       }
     }
